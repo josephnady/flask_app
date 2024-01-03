@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Home Page</h1>
+{% for lesson in lessons %}
+<h2>{{lesson.Title}}</h2>
+<p><b>In: </b>{{lesson.In}}</p>
+<p><b>By: </b>{{lesson.By}}</p>
+<br>
+{% endfor %}
+{% endblock content %}
